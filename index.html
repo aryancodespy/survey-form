@@ -8,51 +8,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Heading -->
-    <h1 id="title">Cat Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the website</p>
-    
-    <!-- Form -->
-    <form action="#" id="survey-form">
+    <main>
+        <!-- Heading -->
+        <h1 id="title">Cat Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the website</p>
         
-        <!-- Name -->
-        <label for="username" id="name-label">Name</label>
-        <input type="text" name="username" id="username" placeholder="i.e Tony Stark" required>
+        <!-- Form -->
+        <form action="#" id="survey-form">
+            
+            <!-- Name -->
+            <label for="username" id="name-label">Name</label>
+            <input type="text" name="username" id="username" placeholder="i.e Tony Stark" required>
 
-        <!-- Email -->
-        <label for="email" id="email-label">Email</label>
-        <input type="email" name="email" id="email" placeholder="i.e example@cat.com" required>
+            <!-- Email -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="i.e example@cat.com" required>
 
-        <!-- Cat Age -->
-        <label for="cat-age" id="number-label">Age <small>(optional)</small></label>
-        <input type="number" name="cat-age" id="cat-age" placeholder="Your cats' age in months" min="0" max="100">
+            <!-- Cat Age -->
+            <label for="cat-age" id="number-label">Age <small>(optional)</small></label>
+            <input type="number" name="cat-age" id="cat-age" placeholder="Your cats' age in months" min="0" max="100">
+            
+            <!-- Cats' Personality -->
+            <label for="dropdown">What is your cat's personality?</label>
+            <select name="personality" id="dropdown" required>
+                <option value="">Select personality</option>
+                <option value="1">Loving</option>
+                <option value="2">Lazy</option>
+                <option value="3">Energetic</option>
+            </select>
+
+            <!-- Cat Type: Indoor or Outdoor -->
+            <label>Is your cat an indoor or outdoor cat?</label>
+            <input type="radio" name="indoor-outdoor" id="indoor" value="Indoor" checked><label for="indoor">Indoor</label>
+            <input type="radio" name="indoor-outdoor" id="outdoor" value="Outdoor"><label for="outdoor">Outdoor</label>
+
+            <!-- Favorite Food -->
+            <label>Does your cat like any of these food? <small>(Check all that apply)</small></label>
+            <input type="checkbox" name="beef" id="beef" value="Cooked beef"><label for="beef">Cooked beef</label>
+            <input type="checkbox" name="chicken" id="chicken" value="Chicken"><label for="chicken">Chicken</label>
+            <input type="checkbox" name="turkey" id="turkey" value="Turkey"><label for="turkey">Turkey</label>
+
+            <!-- Comments -->
+            <label for="comments">Describe your cat in a sentence or two.</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         
-        <!-- Cats' Personality -->
-        <label for="dropdown">What is your cat's personality?</label>
-        <select name="personality" id="dropdown" required>
-            <option value="">Select personality</option>
-            <option value="1">Loving</option>
-            <option value="2">Lazy</option>
-            <option value="3">Energetic</option>
-        </select>
-
-        <!-- Cat Type: Indoor or Outdoor -->
-        <label>Is your cat an indoor or outdoor cat?</label>
-        <input type="radio" name="indoor-outdoor" id="indoor" value="Indoor" checked><label for="indoor">Indoor</label>
-        <input type="radio" name="indoor-outdoor" id="outdoor" value="Outdoor"><label for="outdoor">Outdoor</label>
-
-        <!-- Favorite Food -->
-        <label>Does your cat like any of these food? <small>(Check all that apply)</small></label>
-        <input type="checkbox" name="beef" id="beef" value="Cooked beef"><label for="beef">Cooked beef</label>
-        <input type="checkbox" name="chicken" id="chicken" value="Chicken"><label for="chicken">Chicken</label>
-        <input type="checkbox" name="turkey" id="turkey" value="Turkey"><label for="turkey">Turkey</label>
-
-        <!-- Comments -->
-        <label for="comments">Describe your cat in a sentence or two.</label>
-        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-    
-        <!-- Submit Button -->
-        <button id="submit" value="Submit">Submit</button>
-    </form>
+            <!-- Submit Button -->
+            <button id="submit" value="Submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
